@@ -1,0 +1,14 @@
+*Add
+packages/parser/classes/view/phptal.php
+
+*Modify
+packages/parser/config/parser.php
+
+
+*Location of PHPTAL library
+app/vendor/
+You can change the directory by changing the packages/parser/config/parser.php View_Phptal include.
+
+*Location of cache
+app/cache/
+You can change the directory by changing the packages/parser/config/parser.php View_Phptal cache_dir.
