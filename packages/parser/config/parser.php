@@ -145,7 +145,7 @@ return array(
 			'cache_dir' => APPPATH.'cache'.DS.'PHPTAL'.DS,
 			'cache_lifetime' => 0,
 			'encoding' => 'UTF-8',
-			'output_mode' => 'XHTML',
+			'output_mode' => 'PHPTAL::XHTML',
 			'template_repository' => '',
 			'force_reparse' => false,
 		),

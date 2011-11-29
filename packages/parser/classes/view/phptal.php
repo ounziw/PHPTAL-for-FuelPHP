@@ -51,7 +51,7 @@ class View_Phptal extends \View
 
 		static::$_parser = new \PHPTAL();
 		static::$_parser->setEncoding(\Config::get('parser.View_Phptal.encoding', 'UTF-8'));
-		static::$_parser->setOutputMode(constant('\PHPTAL::'.\Config::get('parser.View_Phptal.output_mode', 'XHTML')));
+		static::$_parser->setOutputMode(constant('\\'.\Config::get('parser.View_Phptal.output_mode', 'PHPTAL::XHTML')));
 		static::$_parser->setTemplateRepository(\Config::get('parser.View_Phptal.template_repository', ''));
 		static::$_parser->setPhpCodeDestination(\Config::get('parser.View_Phptal.cache_dir', APPPATH.'cache'.DS.'PHPTAL'.DS));
 		static::$_parser->setCacheLifetime(\Config::get('parser.View_Phptal.cache_lifetime', 0));
